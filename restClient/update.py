@@ -27,10 +27,8 @@ def update(event, context):
         ExpressionAttributeValues={
           ':text': data['text']
         },
-        UpdateExpression='SET #text = :text, '
-                         'checked = :checked, '
-                         'updatedAt = :updatedAt',
-        ReturnValues='ALL_NEW',
+        UpdateExpression='SET #text = :text',
+        ReturnValues='ALL_NEW'
     )
 
     response = {

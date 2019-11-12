@@ -25,7 +25,7 @@ def create(event, context):
         'text': data['text'],
         'checked': False,
         'createdAt': timestamp,
-        'updatedAt': timestamp,
+        'updatedAt': timestamp
     }
 
     # write the todo to the database

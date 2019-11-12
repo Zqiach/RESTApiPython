@@ -26,6 +26,13 @@ functions:
           path: restClient
           method: post
           cors: true
+  list:
+    handler: restClient/list.list
+    events:
+      - http:
+          path: restClient
+          method: get
+          cors: true
 
 
 resources:

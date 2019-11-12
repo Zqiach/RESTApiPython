@@ -47,16 +47,13 @@ functions:
           path: restClient/{id}
           method: put
           cors: true
- delete:
+  delete:
     handler: restClient/delete.delete
     events:
       - http:
           path: restClient/{id}
           method: delete
           cors: true
-
-
-
 resources:
   Resources:
     restClientDynamoDbTable:

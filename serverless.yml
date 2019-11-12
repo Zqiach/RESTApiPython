@@ -33,6 +33,14 @@ functions:
           path: restClient
           method: get
           cors: true
+  get:
+    handler: restClient/get.get
+    events:
+      - http:
+          path: restClient/{id}
+          method: get
+          cors: true
+
 
 
 resources:

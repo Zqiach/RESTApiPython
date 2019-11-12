@@ -8,7 +8,7 @@ dynamodb = boto3.resource('dynamodb')
 
 
 def update(event, context):
-    data = json.loads(event[''])
+    data = json.loads(event['body'])
     if 'text' not in data:
         logging.error("Validation Failed")
         raise Exception("Couldn't update the todo item.")
